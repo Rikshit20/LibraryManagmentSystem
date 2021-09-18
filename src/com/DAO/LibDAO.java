@@ -120,7 +120,7 @@ public class LibDAO {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, b.getBname());
 			
-			System.out.println("yes");
+			System.out.println(sql+"yes");
 			ResultSet rs2 = ps.executeQuery();
 			
 			if (rs2.next()) {
